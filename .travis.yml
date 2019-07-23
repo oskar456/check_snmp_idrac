@@ -1,0 +1,12 @@
+language: python
+python: '3.6'
+install:
+- make
+deploy:
+  provider: releases
+  api_key:
+    secure: Xpt8NAC3P/Vb4r1AkTTHavodOQ+pOig1dFrxrpI9zUE0kwg7ajavOqWFEky4IEi6ezjC3eHoYtodxloyUeE8FQRprWOEeVmC7tthvT4V6XapQEo+tpHxjUBqHwbWXanMZ9YhwQIkAFQt75QOy+mN6QgnKZ/JXqnnt08m41gIYamkCXGnH36SjTNlYhrElymPDrF5jPHPbBVzVGQaaxz/3QPJFH2rBJnGLeS83f4ZRrVABAwEbV0d9cIvcFJwa/pkoiH7e26ZP7uAt482BCuC2U/roX1PRBReC0WDTdYrRy/iemoubzvUBb5Q264yC1TcpSuaj9wkVvO22n8Xd4mixRotRUcJ0smduoymZY0M8LEmcJv5bRn403KnVXp8eZucMXEpS6ufzWX9KgMWLCvgXf2jB7Lh5GWfkkWGkdfXRjFcSXaBF4HFLGXJXHSj+3OQQdBaOPY/D/6iAqt8McD0z5TaV+OB0eQiJ1Mb+L4Ysu2cxSZ5Y7Ojue6pUfP+2P4BhrP+ZQr1VxpycI1tLaFGIXg4jj/dpXmHcqk+8KXx9mXPSLqI9XhdwCYzlkocIVPMpfRzgpn+Evl1tCXtj1amTLeN1xThgnu0TqSwCr3MaY20oVfGV1qznYT5w01pL6QQ1ltUOZLZjrxIRLgKGbhOGaUAl8NuTgBdf1e1rqvGkFk=
+  file: check-snmp-idrac
+  on:
+    repo: oskar456/check_snmp_idrac
+    tags: true
