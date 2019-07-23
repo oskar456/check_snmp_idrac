@@ -1,5 +1,15 @@
+import sys
+try:
+    import netsnmp
+except ImportError:
+    if sys.version_info[0] == 2:
+        sys.exit("""Please install netsnmp for Python 2.
+Hint: Debian package is named python-netsnmp.""")
+    else:
+        sys.exit("""Please install netsnmp for Python 3.
+Hint: python3-netsnmp can be easily installed from PyPI.""")
+
 import pynag
-import netsnmp
 from pynag.Plugins import unknown
 
 netsnmp.verbose = 0
